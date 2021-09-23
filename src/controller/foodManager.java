@@ -65,10 +65,10 @@ public class foodManager {
 	public int nhapWeight() {
 		while (true) {
 			try {
-				System.out.println("Enter weight [1-5000] (g):");
+				System.out.println("Enter weight [1-10000] (g):");
 				int wei = Integer.parseInt(sc.nextLine());
-				while (wei < 1 || wei > 5000) {
-					System.err.println("Weight in the range [1..5000]");
+				while (wei < 1 || wei > 10000) {
+					System.err.println("Weight in the range [1..10000]");
 					System.out.println("Re-enter weight:");
 					wei = Integer.parseInt(sc.nextLine());
 				}
